@@ -5,9 +5,19 @@
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
                     @if($categories)
+                    <h2><b>Categories</b></h2>
                     <ul>
                         @foreach ($categories as $category )
                         <li>{{ $category->name }}</li>
+                        @endforeach
+                    </ul>
+                    @endif
+
+                    @if($posts)
+                    <h2><b>Posts</b></h2>
+                    <ul>
+                        @foreach ($posts as $post)
+                            <li>{{ $post->title }}</li>
                         @endforeach
                     </ul>
                     @endif
