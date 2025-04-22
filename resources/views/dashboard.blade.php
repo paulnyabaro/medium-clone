@@ -22,6 +22,8 @@
                             <a href="" class="py-2 px-3 rounded bg-blue-100 hover:bg-blue-200 text-blue-800 mt-2 inline-flex">Read More</a>
                         </div>
                     @endforeach
+
+                    {{ $posts->links() }}
                     @endif
                 </div>
             </div>
