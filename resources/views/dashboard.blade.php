@@ -15,11 +15,12 @@
 
                     @if($posts)
                     <h2><b>Posts</b></h2>
-                    <ul>
-                        @foreach ($posts as $post)
-                            <li>{{ $post->title }}</li>
-                        @endforeach
-                    </ul>
+                    @foreach ($posts as $post)
+                        <div class="p-4 bg-white border rounded mt-4">
+                            <h3><b>{{ $post->title }}</b></h3>
+                            <p>{{ Str::words($post->content, 20) }}</p>
+                        </div>
+                    @endforeach
                     @endif
                 </div>
             </div>
