@@ -18,6 +18,12 @@
                 </div>
             </div>
 
+            <a class="flex items-center">
+                <x-primary-button>
+                    Create Post
+                </x-primary-button>
+            </a>
+
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
